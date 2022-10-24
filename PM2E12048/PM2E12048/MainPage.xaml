@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12048.MainPage"
+             BackgroundColor="Azure">
+
+    <StackLayout>
+        <Frame BackgroundColor="Green"  Padding="15" CornerRadius="0">
+            <Label Text="Aylin Funez y Jennifer Ardon" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        </Frame>
+
+        <!--FOTO-->
+        <Image x:Name="fotoSitio" 
+               HorizontalOptions="Fill" 
+               VerticalOptions="FillAndExpand"  
+               BackgroundColor="Gray" 
+               Margin="50,2,50,0" 
+               Background="Azure"/>
+        
+        <Button Text="Tomar Foto" 
+                x:Name="btnFoto" 
+                Clicked="btnFoto_Clicked" 
+                Padding="0,20,0,20" 
+                Background="LightBlue"/>
+        
+        <!--DATOS-->
+        <Label Text="Latitud" 
+               TextColor="Black" 
+               FontSize="18"/>
+        <Entry x:Name="txtLatitud" 
+               IsReadOnly="true" 
+               TextTransform="None"
+               IsEnabled="False"/>
+        
+        <Label Text="Longitud" 
+               TextColor="Black" 
+               FontSize="18"/>
+        <Entry x:Name="txtLongitud" 
+               IsReadOnly="true" 
+               TextTransform="None"
+               IsEnabled="False"/>
+        
+        <Label Text="Descripcion" 
+               TextColor="Black" 
+               FontSize="18"/>
+        <Entry x:Name="txtDescripcion"/>
+        
+        <!--BONOTES-->
+        <Button Text="Agregar" x:Name="btnAdd" Clicked="btnAdd_Clicked" Padding="0,20,0,20" Background="Green" TextColor="White"/>
+        <Button Text="Listar Sitios" x:Name="btnList" Clicked="btnList_Clicked"  Padding="0,20,0,20" Background="Green" TextColor="White"/>
+        <Button Text="Salir" x:Name="btnSalir" Clicked="btnSalir_Clicked"  Padding="0,20,0,20" Background="Red" TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>
